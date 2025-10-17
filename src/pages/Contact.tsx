@@ -147,9 +147,13 @@ const Contact = () => {
                   <div className="p-3 bg-primary/10 rounded-lg">
                     <Phone className="h-6 w-6 text-primary" />
                   </div>
-                  <div>
+                  <div className="flex-1">
                     <h3 className="text-lg font-semibold text-foreground mb-2">Phone</h3>
-                    <a href="tel:+918630539143" className="text-muted-foreground hover:text-primary transition-colors">
+                    <a 
+                      href="tel:+918630539143" 
+                      className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium"
+                    >
+                      <Phone className="h-4 w-4" />
                       +91 8630539143
                     </a>
                   </div>
