@@ -197,7 +197,7 @@ const Contact = () => {
                     href="https://www.facebook.com/naresh4nation"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-3 bg-primary/10 hover:bg-primary hover:text-primary-foreground rounded-lg transition-all transform hover:scale-110"
+                    className="p-3 bg-[#1877F2] hover:bg-[#0d5dbf] text-white rounded-lg transition-all transform hover:scale-110"
                   >
                     <Facebook className="h-6 w-6" />
                   </a>
@@ -205,7 +205,7 @@ const Contact = () => {
                     href="https://www.instagram.com/naresh4nation"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-3 bg-primary/10 hover:bg-primary hover:text-primary-foreground rounded-lg transition-all transform hover:scale-110"
+                    className="p-3 bg-gradient-to-tr from-[#FD5949] via-[#D6249F] to-[#285AEB] hover:opacity-90 text-white rounded-lg transition-all transform hover:scale-110"
                   >
                     <Instagram className="h-6 w-6" />
                   </a>
@@ -213,7 +213,7 @@ const Contact = () => {
                     href="https://www.twitter.com/naresh4nation"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-3 bg-primary/10 hover:bg-primary hover:text-primary-foreground rounded-lg transition-all transform hover:scale-110"
+                    className="p-3 bg-[#000000] hover:bg-[#333333] text-white rounded-lg transition-all transform hover:scale-110"
                   >
                     <Twitter className="h-6 w-6" />
                   </a>
@@ -221,7 +221,7 @@ const Contact = () => {
                     href="https://www.youtube.com/@naresh4nation"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-3 bg-primary/10 hover:bg-primary hover:text-primary-foreground rounded-lg transition-all transform hover:scale-110"
+                    className="p-3 bg-[#FF0000] hover:bg-[#cc0000] text-white rounded-lg transition-all transform hover:scale-110"
                   >
                     <Youtube className="h-6 w-6" />
                   </a>
