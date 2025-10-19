@@ -8,96 +8,96 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 220 13% 18%;
+    --background: 0 0% 7%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 13% 18%;
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 13% 18%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 98%;
 
-    /* BJP Saffron Orange - Primary Brand Color */
-    --primary: 28 100% 60%;
-    --primary-foreground: 0 0% 100%;
+    /* Elegant Gold - Primary Brand Color */
+    --primary: 40 85% 60%;
+    --primary-foreground: 0 0% 10%;
     
-    /* Light Saffron for backgrounds */
-    --primary-light: 28 100% 95%;
+    /* Light Gold for backgrounds */
+    --primary-light: 40 85% 25%;
     
-    /* Deep Saffron for hover states */
-    --primary-dark: 28 100% 45%;
+    /* Deep Gold for hover states */
+    --primary-dark: 40 85% 50%;
 
-    /* BJP Blue - Accent Color */
-    --accent: 217 91% 55%;
-    --accent-foreground: 0 0% 100%;
+    /* Subtle Accent Color */
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 98%;
     
-    /* Light Blue for backgrounds */
-    --accent-light: 217 91% 95%;
+    /* Light accent for backgrounds */
+    --accent-light: 0 0% 12%;
 
-    --secondary: 210 20% 96%;
-    --secondary-foreground: 220 13% 18%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 210 20% 96%;
-    --muted-foreground: 220 9% 46%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 28 100% 60%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 40 85% 60%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
     /* Gradient for hero sections */
-    --gradient-hero: linear-gradient(135deg, hsl(28 100% 60%) 0%, hsl(28 100% 70%) 50%, hsl(217 91% 55%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 7%) 0%, hsl(0 0% 12%) 50%, hsl(40 85% 20%) 100%);
     
     /* Subtle background gradient */
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(28 100% 98%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 7%) 0%, hsl(0 0% 10%) 100%);
     
-    /* Card shadow with saffron glow */
-    --shadow-card: 0 4px 20px -2px hsl(28 100% 60% / 0.15);
+    /* Card shadow with gold glow */
+    --shadow-card: 0 4px 20px -2px hsl(40 85% 60% / 0.15);
     
     /* Elevated shadow */
-    --shadow-elevated: 0 10px 40px -10px hsl(28 100% 60% / 0.25);
+    --shadow-elevated: 0 10px 40px -10px hsl(40 85% 60% / 0.25);
     
     /* Smooth transitions */
     --transition-base: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dark {
-    --background: 220 18% 12%;
+    --background: 0 0% 5%;
     --foreground: 0 0% 98%;
 
-    --card: 220 18% 15%;
+    --card: 0 0% 8%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 220 18% 15%;
+    --popover: 0 0% 8%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 28 100% 60%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 40 85% 55%;
+    --primary-foreground: 0 0% 10%;
     
-    --primary-light: 28 100% 20%;
-    --primary-dark: 28 100% 50%;
+    --primary-light: 40 85% 20%;
+    --primary-dark: 40 85% 45%;
 
-    --accent: 217 91% 55%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 0 0% 12%;
+    --accent-foreground: 0 0% 98%;
     
-    --accent-light: 217 91% 20%;
+    --accent-light: 0 0% 10%;
 
-    --secondary: 220 18% 20%;
+    --secondary: 0 0% 12%;
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 220 18% 20%;
-    --muted-foreground: 220 9% 65%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 70%;
 
     --destructive: 0 62% 50%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 18% 25%;
-    --input: 220 18% 25%;
-    --ring: 28 100% 60%;
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 40 85% 55%;
   }
 }
 
@@ -126,24 +126,24 @@ All colors MUST be HSL.
   .btn-hero {
     @apply bg-primary text-primary-foreground hover:bg-[hsl(var(--primary-dark))] 
            shadow-lg hover:shadow-xl transition-all duration-300 
-           transform hover:scale-105 font-medium;
+           transform hover:scale-105 font-semibold;
   }
   
-  /* Card with saffron glow */
+  /* Card with gold glow */
   .card-glow {
-    @apply bg-card border border-border rounded-xl 
+    @apply bg-card border border-border rounded-lg 
            shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-elevated)]
            transition-all duration-300;
   }
   
   /* Gradient text */
   .gradient-text {
-    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-primary via-[hsl(var(--primary-dark))] to-primary bg-clip-text text-transparent;
   }
   
   /* Section with subtle gradient background */
   .section-gradient {
-    @apply bg-gradient-to-b from-background to-[hsl(var(--primary-light))];
+    @apply bg-gradient-to-b from-background to-[hsl(var(--accent-light))];
   }
   
   /* Fade in animation */
