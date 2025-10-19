@@ -17,15 +17,15 @@ All colors MUST be HSL.
     --popover: 0 0% 10%;
     --popover-foreground: 0 0% 98%;
 
-    /* Elegant Gold - Primary Brand Color */
-    --primary: 40 85% 60%;
-    --primary-foreground: 0 0% 10%;
+    /* Vibrant Blue - Primary Brand Color */
+    --primary: 215 100% 60%;
+    --primary-foreground: 0 0% 100%;
     
-    /* Light Gold for backgrounds */
-    --primary-light: 40 85% 25%;
+    /* Light Blue for backgrounds */
+    --primary-light: 215 100% 25%;
     
-    /* Deep Gold for hover states */
-    --primary-dark: 40 85% 50%;
+    /* Deep Blue for hover states */
+    --primary-dark: 215 100% 50%;
 
     /* Subtle Accent Color */
     --accent: 0 0% 15%;
@@ -45,21 +45,21 @@ All colors MUST be HSL.
 
     --border: 0 0% 20%;
     --input: 0 0% 20%;
-    --ring: 40 85% 60%;
+    --ring: 215 100% 60%;
 
     --radius: 0.5rem;
 
     /* Gradient for hero sections */
-    --gradient-hero: linear-gradient(135deg, hsl(0 0% 7%) 0%, hsl(0 0% 12%) 50%, hsl(40 85% 20%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 7%) 0%, hsl(0 0% 12%) 50%, hsl(215 100% 20%) 100%);
     
     /* Subtle background gradient */
     --gradient-subtle: linear-gradient(180deg, hsl(0 0% 7%) 0%, hsl(0 0% 10%) 100%);
     
-    /* Card shadow with gold glow */
-    --shadow-card: 0 4px 20px -2px hsl(40 85% 60% / 0.15);
+    /* Card shadow with blue glow */
+    --shadow-card: 0 4px 20px -2px hsl(215 100% 60% / 0.15);
     
     /* Elevated shadow */
-    --shadow-elevated: 0 10px 40px -10px hsl(40 85% 60% / 0.25);
+    --shadow-elevated: 0 10px 40px -10px hsl(215 100% 60% / 0.25);
     
     /* Smooth transitions */
     --transition-base: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -75,11 +75,11 @@ All colors MUST be HSL.
     --popover: 0 0% 8%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 40 85% 55%;
-    --primary-foreground: 0 0% 10%;
+    --primary: 215 100% 55%;
+    --primary-foreground: 0 0% 100%;
     
-    --primary-light: 40 85% 20%;
-    --primary-dark: 40 85% 45%;
+    --primary-light: 215 100% 20%;
+    --primary-dark: 215 100% 45%;
 
     --accent: 0 0% 12%;
     --accent-foreground: 0 0% 98%;
@@ -97,7 +97,7 @@ All colors MUST be HSL.
 
     --border: 0 0% 18%;
     --input: 0 0% 18%;
-    --ring: 40 85% 55%;
+    --ring: 215 100% 55%;
   }
 }
 
