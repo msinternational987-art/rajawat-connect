@@ -17,15 +17,15 @@ All colors MUST be HSL.
     --popover: 0 0% 10%;
     --popover-foreground: 0 0% 98%;
 
-    /* Vibrant Blue - Primary Brand Color */
-    --primary: 215 100% 60%;
-    --primary-foreground: 0 0% 100%;
+    /* Neutral Gray - Primary Brand Color */
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 10%;
     
-    /* Light Blue for backgrounds */
-    --primary-light: 215 100% 25%;
+    /* Light Gray for backgrounds */
+    --primary-light: 0 0% 18%;
     
-    /* Deep Blue for hover states */
-    --primary-dark: 215 100% 50%;
+    /* Deep Gray for hover states */
+    --primary-dark: 0 0% 88%;
 
     /* Subtle Accent Color */
     --accent: 0 0% 15%;
@@ -45,21 +45,21 @@ All colors MUST be HSL.
 
     --border: 0 0% 20%;
     --input: 0 0% 20%;
-    --ring: 215 100% 60%;
+    --ring: 0 0% 60%;
 
     --radius: 0.5rem;
 
     /* Gradient for hero sections */
-    --gradient-hero: linear-gradient(135deg, hsl(0 0% 7%) 0%, hsl(0 0% 12%) 50%, hsl(215 100% 20%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 7%) 0%, hsl(0 0% 10%) 50%, hsl(0 0% 15%) 100%);
     
     /* Subtle background gradient */
     --gradient-subtle: linear-gradient(180deg, hsl(0 0% 7%) 0%, hsl(0 0% 10%) 100%);
     
-    /* Card shadow with blue glow */
-    --shadow-card: 0 4px 20px -2px hsl(215 100% 60% / 0.15);
+    /* Card shadow with subtle glow */
+    --shadow-card: 0 4px 20px -2px hsl(0 0% 0% / 0.3);
     
     /* Elevated shadow */
-    --shadow-elevated: 0 10px 40px -10px hsl(215 100% 60% / 0.25);
+    --shadow-elevated: 0 10px 40px -10px hsl(0 0% 0% / 0.5);
     
     /* Smooth transitions */
     --transition-base: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -75,11 +75,11 @@ All colors MUST be HSL.
     --popover: 0 0% 8%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 215 100% 55%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 0 0% 85%;
+    --primary-foreground: 0 0% 10%;
     
-    --primary-light: 215 100% 20%;
-    --primary-dark: 215 100% 45%;
+    --primary-light: 0 0% 15%;
+    --primary-dark: 0 0% 75%;
 
     --accent: 0 0% 12%;
     --accent-foreground: 0 0% 98%;
@@ -97,7 +97,7 @@ All colors MUST be HSL.
 
     --border: 0 0% 18%;
     --input: 0 0% 18%;
-    --ring: 215 100% 55%;
+    --ring: 0 0% 60%;
   }
 }
 
@@ -122,14 +122,14 @@ All colors MUST be HSL.
 }
 
 @layer components {
-  /* Hero button variant */
+  /* Hero button variant - Simple outline style */
   .btn-hero {
-    @apply bg-primary text-primary-foreground hover:bg-[hsl(var(--primary-dark))] 
-           shadow-lg hover:shadow-xl transition-all duration-300 
-           transform hover:scale-105 font-semibold;
+    @apply border-2 border-foreground text-foreground bg-transparent 
+           hover:bg-foreground hover:text-background
+           transition-all duration-300 font-semibold;
   }
   
-  /* Card with gold glow */
+  /* Card with subtle glow */
   .card-glow {
     @apply bg-card border border-border rounded-lg 
            shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-elevated)]
@@ -138,7 +138,7 @@ All colors MUST be HSL.
   
   /* Gradient text */
   .gradient-text {
-    @apply bg-gradient-to-r from-primary via-[hsl(var(--primary-dark))] to-primary bg-clip-text text-transparent;
+    @apply text-foreground;
   }
   
   /* Section with subtle gradient background */
