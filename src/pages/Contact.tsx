@@ -150,11 +150,11 @@ const Contact = () => {
                   <div className="flex-1">
                     <h3 className="text-lg font-semibold text-foreground mb-2">Phone</h3>
                     <a 
-                      href="tel:+918630539143" 
+                      href="tel:+917500697009" 
                       className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium"
                     >
                       <Phone className="h-4 w-4" />
-                      +91 8630539143
+                      +91 7500697009
                     </a>
                   </div>
                 </div>
@@ -168,12 +168,12 @@ const Contact = () => {
                   <div>
                     <h3 className="text-lg font-semibold text-foreground mb-2">WhatsApp</h3>
                     <a 
-                      href="https://wa.me/918630539143" 
+                      href="https://wa.me/917500697009" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
-                      +91 8630539143
+                      +91 7500697009
                     </a>
                   </div>
                 </div>
