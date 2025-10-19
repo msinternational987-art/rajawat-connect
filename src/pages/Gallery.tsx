@@ -2,7 +2,9 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Image, Video } from "lucide-react";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { Image, Video, X } from "lucide-react";
+import { useState } from "react";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
@@ -14,6 +16,8 @@ import russiaVisit1 from "@/assets/russia-visit-1.jpg";
 import russiaVisit2 from "@/assets/russia-visit-2.jpg";
 
 const Gallery = () => {
+  const [selectedImage, setSelectedImage] = useState<{ src: string; alt: string } | null>(null);
+
   const photos = [
     { src: russiaVisit1, alt: "Russia Visit - International Delegation" },
     { src: russiaVisit2, alt: "Russia Visit - Diplomatic Meeting" },
@@ -66,7 +70,8 @@ const Gallery = () => {
                 {photos.map((photo, index) => (
                   <div
                     key={index}
-                    className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 card-glow"
+                    className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 card-glow cursor-pointer"
+                    onClick={() => setSelectedImage(photo)}
                   >
                     <img
                       src={photo.src}
@@ -126,6 +131,33 @@ const Gallery = () => {
       </section>
 
       <Footer />
+      
+      {/* Image Lightbox */}
+      <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
+        <DialogContent className="max-w-7xl w-full p-0 bg-black/95 border-none">
+          <button
+            onClick={() => setSelectedImage(null)}
+            className="absolute top-4 right-4 z-50 p-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors"
+            aria-label="Close"
+          >
+            <X className="h-6 w-6 text-white" />
+          </button>
+          {selectedImage && (
+            <div className="relative w-full h-[90vh] flex items-center justify-center p-4">
+              <img
+                src={selectedImage.src}
+                alt={selectedImage.alt}
+                className="max-w-full max-h-full object-contain"
+              />
+              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+                <p className="text-white text-lg font-medium text-center">
+                  {selectedImage.alt}
+                </p>
+              </div>
+            </div>
+          )}
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
